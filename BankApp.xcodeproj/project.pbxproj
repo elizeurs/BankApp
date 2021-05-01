@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7537B522263DA2BF00760492 /* AccountSummaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7537B521263DA2BF00760492 /* AccountSummaryScreen.swift */; };
+		7537B525263DA5D900760492 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7537B524263DA5D900760492 /* AccountListView.swift */; };
 		7589AEAC263CAFE3006A9DD6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589AEAB263CAFE3006A9DD6 /* Account.swift */; };
 		7589AEAF263CB2A5006A9DD6 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589AEAE263CB2A5006A9DD6 /* AccountService.swift */; };
 		7589AEB2263CC076006A9DD6 /* AccountSumaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589AEB1263CC076006A9DD6 /* AccountSumaryViewModel.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7537B521263DA2BF00760492 /* AccountSummaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryScreen.swift; sourceTree = "<group>"; };
+		7537B524263DA5D900760492 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
 		7589AEAB263CAFE3006A9DD6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		7589AEAE263CB2A5006A9DD6 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		7589AEB1263CC076006A9DD6 /* AccountSumaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSumaryViewModel.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 		8D40C33E24E1C4C90040822F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				7537B521263DA2BF00760492 /* AccountSummaryScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 		8D40C33F24E1C4CE0040822F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7537B524263DA5D900760492 /* AccountListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7537B525263DA5D900760492 /* AccountListView.swift in Sources */,
 				7589AEB2263CC076006A9DD6 /* AccountSumaryViewModel.swift in Sources */,
 				8D40C33824E1C4540040822F /* Double+Extensions.swift in Sources */,
+				7537B522263DA2BF00760492 /* AccountSummaryScreen.swift in Sources */,
 				8D40C32324E1C4080040822F /* AppDelegate.swift in Sources */,
 				8D40C33A24E1C4640040822F /* URL+Extensions.swift in Sources */,
 				8D40C32524E1C4080040822F /* SceneDelegate.swift in Sources */,
@@ -358,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"BankApp/Preview Content\"";
-				DEVELOPMENT_TEAM = B2Q8EGNCQA;
+				DEVELOPMENT_TEAM = VM55LWG8PP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BankApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -378,7 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"BankApp/Preview Content\"";
-				DEVELOPMENT_TEAM = B2Q8EGNCQA;
+				DEVELOPMENT_TEAM = VM55LWG8PP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BankApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
