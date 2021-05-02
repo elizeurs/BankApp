@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7537B522263DA2BF00760492 /* AccountSummaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7537B521263DA2BF00760492 /* AccountSummaryScreen.swift */; };
 		7537B525263DA5D900760492 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7537B524263DA5D900760492 /* AccountListView.swift */; };
+		7559A46D263F577E00BCD120 /* CreateAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559A46C263F577E00BCD120 /* CreateAccountRequest.swift */; };
+		7559A470263F592C00BCD120 /* CreateAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559A46F263F592C00BCD120 /* CreateAccountResponse.swift */; };
 		7589AEAC263CAFE3006A9DD6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589AEAB263CAFE3006A9DD6 /* Account.swift */; };
 		7589AEAF263CB2A5006A9DD6 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589AEAE263CB2A5006A9DD6 /* AccountService.swift */; };
 		7589AEB2263CC076006A9DD6 /* AccountSumaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589AEB1263CC076006A9DD6 /* AccountSumaryViewModel.swift */; };
@@ -26,6 +28,8 @@
 /* Begin PBXFileReference section */
 		7537B521263DA2BF00760492 /* AccountSummaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryScreen.swift; sourceTree = "<group>"; };
 		7537B524263DA5D900760492 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
+		7559A46C263F577E00BCD120 /* CreateAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequest.swift; sourceTree = "<group>"; };
+		7559A46F263F592C00BCD120 /* CreateAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountResponse.swift; sourceTree = "<group>"; };
 		7589AEAB263CAFE3006A9DD6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		7589AEAE263CB2A5006A9DD6 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		7589AEB1263CC076006A9DD6 /* AccountSumaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSumaryViewModel.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				7589AEAB263CAFE3006A9DD6 /* Account.swift */,
+				7559A46C263F577E00BCD120 /* CreateAccountRequest.swift */,
+				7559A46F263F592C00BCD120 /* CreateAccountResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7559A470263F592C00BCD120 /* CreateAccountResponse.swift in Sources */,
 				7537B525263DA5D900760492 /* AccountListView.swift in Sources */,
 				7589AEB2263CC076006A9DD6 /* AccountSumaryViewModel.swift in Sources */,
 				8D40C33824E1C4540040822F /* Double+Extensions.swift in Sources */,
@@ -229,6 +236,7 @@
 				7589AEAF263CB2A5006A9DD6 /* AccountService.swift in Sources */,
 				8D40C32724E1C4080040822F /* ContentView.swift in Sources */,
 				7589AEAC263CAFE3006A9DD6 /* Account.swift in Sources */,
+				7559A46D263F577E00BCD120 /* CreateAccountRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
