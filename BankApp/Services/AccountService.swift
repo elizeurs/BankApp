@@ -45,7 +45,7 @@ class AccountService {
       } else {
         completion(.failure(.decodingError))
       }
-    }
+    }.resume()
   }
   
   func getAllAccounts(completion: @escaping(Result<[Account]?, NetworkError>) -> Void) {

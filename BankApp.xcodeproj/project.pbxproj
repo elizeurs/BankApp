@@ -14,6 +14,7 @@
 		7589AEAC263CAFE3006A9DD6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589AEAB263CAFE3006A9DD6 /* Account.swift */; };
 		7589AEAF263CB2A5006A9DD6 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589AEAE263CB2A5006A9DD6 /* AccountService.swift */; };
 		7589AEB2263CC076006A9DD6 /* AccountSumaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589AEB1263CC076006A9DD6 /* AccountSumaryViewModel.swift */; };
+		75EBEF3A26404B410004FA4E /* AddAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBEF3926404B410004FA4E /* AddAccountViewModel.swift */; };
 		8D40C32324E1C4080040822F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D40C32224E1C4080040822F /* AppDelegate.swift */; };
 		8D40C32524E1C4080040822F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D40C32424E1C4080040822F /* SceneDelegate.swift */; };
 		8D40C32724E1C4080040822F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D40C32624E1C4080040822F /* ContentView.swift */; };
@@ -33,6 +34,7 @@
 		7589AEAB263CAFE3006A9DD6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		7589AEAE263CB2A5006A9DD6 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		7589AEB1263CC076006A9DD6 /* AccountSumaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSumaryViewModel.swift; sourceTree = "<group>"; };
+		75EBEF3926404B410004FA4E /* AddAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewModel.swift; sourceTree = "<group>"; };
 		8D40C31F24E1C4080040822F /* BankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D40C32224E1C4080040822F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D40C32424E1C4080040822F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				7589AEB1263CC076006A9DD6 /* AccountSumaryViewModel.swift */,
+				75EBEF3926404B410004FA4E /* AddAccountViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				7589AEAF263CB2A5006A9DD6 /* AccountService.swift in Sources */,
 				8D40C32724E1C4080040822F /* ContentView.swift in Sources */,
 				7589AEAC263CAFE3006A9DD6 /* Account.swift in Sources */,
+				75EBEF3A26404B410004FA4E /* AddAccountViewModel.swift in Sources */,
 				7559A46D263F577E00BCD120 /* CreateAccountRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
