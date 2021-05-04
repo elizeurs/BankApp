@@ -8,11 +8,17 @@
 
 import SwiftUI
 
+enum ActiveSheet {
+  case addAccount
+  case transferFunds
+}
+
 struct AccountSummaryScreen: View {
   
   @ObservedObject private var accountSummaryVM = AccountSummaryViewModel()
   
   @State private var isPresented: Bool = false
+  @State private var activeSheet: ActiveSheet = .addAccount
   
   var body: some View {
     
@@ -22,7 +28,11 @@ struct AccountSummaryScreen: View {
           AccountListView(accounts: self.accountSummaryVM.accounts)
             .frame(height: g.size.height/2)
           Text("\(self.accountSummaryVM.total.formatAsCurrency())")
-            Spacer()
+          Spacer()
+          Button("Transfer Funds") {
+            self.activeSheet = .transferFunds
+            self.isPresented = true
+          }
         }
       }
     }
@@ -32,11 +42,16 @@ struct AccountSummaryScreen: View {
     .sheet(isPresented: $isPresented, onDismiss: {
       // get all accounts
       self.accountSummaryVM.getAllAccounts()
-    
-  }) {
-  AddAccountScreen()
+      
+    }) {
+      if self.activeSheet == .transferFunds {
+        TransferFundsScreen()
+      } else if self.activeSheet == .addAccount {
+        AddAccountScreen()
+      }
     }
     .navigationBarItems(trailing: Button("Add Account") {
+      self.activeSheet = .addAccount
       self.isPresented = true
     })
     .navigationBarTitle("Account Summary")
