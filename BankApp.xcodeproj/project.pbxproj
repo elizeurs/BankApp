@@ -14,6 +14,7 @@
 		7589AEAC263CAFE3006A9DD6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589AEAB263CAFE3006A9DD6 /* Account.swift */; };
 		7589AEAF263CB2A5006A9DD6 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589AEAE263CB2A5006A9DD6 /* AccountService.swift */; };
 		7589AEB2263CC076006A9DD6 /* AccountSumaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589AEB1263CC076006A9DD6 /* AccountSumaryViewModel.swift */; };
+		7597ACBC264193D1003302D6 /* TransferFundsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7597ACBB264193D1003302D6 /* TransferFundsViewModel.swift */; };
 		75EBEF3A26404B410004FA4E /* AddAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBEF3926404B410004FA4E /* AddAccountViewModel.swift */; };
 		75EBEF3D264073D60004FA4E /* AddAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBEF3C264073D60004FA4E /* AddAccountScreen.swift */; };
 		75EBEF402640B41A0004FA4E /* TransferFundRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBEF3F2640B41A0004FA4E /* TransferFundRequest.swift */; };
@@ -37,6 +38,7 @@
 		7589AEAB263CAFE3006A9DD6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		7589AEAE263CB2A5006A9DD6 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		7589AEB1263CC076006A9DD6 /* AccountSumaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSumaryViewModel.swift; sourceTree = "<group>"; };
+		7597ACBB264193D1003302D6 /* TransferFundsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundsViewModel.swift; sourceTree = "<group>"; };
 		75EBEF3926404B410004FA4E /* AddAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewModel.swift; sourceTree = "<group>"; };
 		75EBEF3C264073D60004FA4E /* AddAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountScreen.swift; sourceTree = "<group>"; };
 		75EBEF3F2640B41A0004FA4E /* TransferFundRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundRequest.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				7589AEB1263CC076006A9DD6 /* AccountSumaryViewModel.swift */,
 				75EBEF3926404B410004FA4E /* AddAccountViewModel.swift */,
+				7597ACBB264193D1003302D6 /* TransferFundsViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				75EBEF3A26404B410004FA4E /* AddAccountViewModel.swift in Sources */,
 				7559A46D263F577E00BCD120 /* CreateAccountRequest.swift in Sources */,
 				75EBEF402640B41A0004FA4E /* TransferFundRequest.swift in Sources */,
+				7597ACBC264193D1003302D6 /* TransferFundsViewModel.swift in Sources */,
 				75EBEF432640B5AB0004FA4E /* TransferFundResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
