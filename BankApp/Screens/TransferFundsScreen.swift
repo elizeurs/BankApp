@@ -16,8 +16,8 @@ struct TransferFundsScreen: View {
   
   var actionSheetButtons: [Alert.Button] {
     
-    var actionButtons = self.transferFundsVM.accounts.map { account in
-      Alert.Button.default(Text("\(account.name) - \(account.accounntType) ")) {
+    var actionButtons = self.transferFundsVM.filteredAccounts.map { account in
+      Alert.Button.default(Text("\(account.name) (\(account.accounntType))")) {
         if self.isFromAccount {
           self.transferFundsVM.fromAccount = account
         } else {
@@ -80,6 +80,8 @@ struct TransferFundsAccountSelectionView: View {
       .frame(maxWidth: .infinity)
       .background(Color.green)
       .foregroundColor(Color.white)
+      .opacity(self.transferFundsVM.fromAccount != nil ? 1.0 : 0.5)
+      .disabled(self.transferFundsVM.fromAccount == nil)
     }.padding()
   }
 }
