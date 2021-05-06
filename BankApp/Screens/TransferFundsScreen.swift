@@ -10,6 +10,7 @@ import SwiftUI
 
 struct TransferFundsScreen: View {
   
+  @Environment(\.presentationMode) var presentationMode
   @ObservedObject private var transferFundsVM = TransferFundsViewModel()
   @State private var showSheet = false
   @State private var isFromAccount = false
@@ -41,9 +42,16 @@ struct TransferFundsScreen: View {
         .onAppear {
           self.transferFundsVM.populateAccounts()
         }
+      
+      Text(self.transferFundsVM.message ?? "")
         
       Button("Submit Transfer") {
-        
+        self.transferFundsVM.submitTransfer {
+//          print("success")
+          // dismiss model
+          self.presentationMode.wrappedValue.dismiss()
+        }
+        print("success")
       }.padding()
         
         .actionSheet(isPresented: $showSheet) {
