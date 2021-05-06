@@ -32,32 +32,33 @@ struct TransferFundsScreen: View {
   }
   
   var body: some View {
-    VStack {
-      AccountListView(accounts: self.transferFundsVM.accounts)
-        .frame(height: 300)
-      
-      TransferFundsAccountSelectionView(transferFundsVM: self.transferFundsVM, showSheet: $showSheet, isFromAccount: $isFromAccount)
-      Spacer()
+    ScrollView {
+      VStack {
+        AccountListView(accounts: self.transferFundsVM.accounts)
+          .frame(height: 200)
         
-        .onAppear {
-          self.transferFundsVM.populateAccounts()
-        }
-      
-      Text(self.transferFundsVM.message ?? "")
+        TransferFundsAccountSelectionView(transferFundsVM: self.transferFundsVM, showSheet: $showSheet, isFromAccount: $isFromAccount)
+        Spacer()
+          
+          .onAppear {
+            self.transferFundsVM.populateAccounts()
+          }
         
-      Button("Submit Transfer") {
-        self.transferFundsVM.submitTransfer {
-//          print("success")
-          // dismiss model
-          self.presentationMode.wrappedValue.dismiss()
-        }
-        print("success")
-      }.padding()
-        
-        .actionSheet(isPresented: $showSheet) {
-          ActionSheet(title: Text("Transfer Funds"), message: Text("Choose an account"), buttons: self.actionSheetButtons)
-        }
-      
+        Text(self.transferFundsVM.message ?? "")
+          
+        Button("Submit Transfer") {
+          self.transferFundsVM.submitTransfer {
+  //          print("success")
+            // dismiss model
+            self.presentationMode.wrappedValue.dismiss()
+          }
+          print("success")
+        }.padding()
+          
+          .actionSheet(isPresented: $showSheet) {
+            ActionSheet(title: Text("Transfer Funds"), message: Text("Choose an account"), buttons: self.actionSheetButtons)
+          }
+      }
     }.navigationBarTitle("Transfer Funds")
     .embedInNavigationView()
   }
@@ -69,36 +70,36 @@ struct TransferFundsScreen_Previews: PreviewProvider {
   }
 }
 
-struct TransferFundsAccountSelectionView: View {
-  
-  @ObservedObject var transferFundsVM: TransferFundsViewModel
-  @Binding var showSheet: Bool
-  @Binding var isFromAccount: Bool
-  
-  var body: some View {
-    VStack(spacing: 10) {
-      Button("From \(self.transferFundsVM.fromAccountType)") {
-        self.isFromAccount = true
-        self.showSheet = true
-      }.padding()
-      .frame(maxWidth: .infinity)
-      .background(Color.green)
-      .foregroundColor(Color.white)
-      
-      Button("To \(self.transferFundsVM.fromAccountType)") {
-        self.isFromAccount = false
-        self.showSheet = true
-      }.padding()
-      .frame(maxWidth: .infinity)
-      .background(Color.green)
-      .foregroundColor(Color.white)
-      .opacity(self.transferFundsVM.fromAccount != nil ? 1.0 : 0.5)
-      .disabled(self.transferFundsVM.fromAccount == nil)
-      
-      TextField("Amount", text: self.$transferFundsVM.amount)
-        .textFieldStyle(RoundedBorderTextFieldStyle())
-      
-      
-    }.padding()
-  }
-}
+//struct TransferFundsAccountSelectionView: View {
+//
+//  @ObservedObject var transferFundsVM: TransferFundsViewModel
+//  @Binding var showSheet: Bool
+//  @Binding var isFromAccount: Bool
+//
+//  var body: some View {
+//    VStack(spacing: 10) {
+//      Button("From \(self.transferFundsVM.fromAccountType)") {
+//        self.isFromAccount = true
+//        self.showSheet = true
+//      }.padding()
+//      .frame(maxWidth: .infinity)
+//      .background(Color.green)
+//      .foregroundColor(Color.white)
+//
+//      Button("To \(self.transferFundsVM.toAccountType)") {
+//        self.isFromAccount = false
+//        self.showSheet = true
+//      }.padding()
+//      .frame(maxWidth: .infinity)
+//      .background(Color.green)
+//      .foregroundColor(Color.white)
+//      .opacity(self.transferFundsVM.fromAccount != nil ? 1.0 : 0.5)
+//      .disabled(self.transferFundsVM.fromAccount == nil)
+//
+//      TextField("Amount", text: self.$transferFundsVM.amount)
+//        .textFieldStyle(RoundedBorderTextFieldStyle())
+//
+//
+//    }.padding()
+//  }
+//}

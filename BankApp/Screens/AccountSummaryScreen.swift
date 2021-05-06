@@ -20,6 +20,7 @@ struct AccountSummaryScreen: View {
   @State private var isPresented: Bool = false
   @State private var activeSheet: ActiveSheet = .addAccount
   
+  
   var body: some View {
     
     VStack {
@@ -32,7 +33,7 @@ struct AccountSummaryScreen: View {
           Button("Transfer Funds") {
             self.activeSheet = .transferFunds
             self.isPresented = true
-          }
+          }.padding()
         }
       }
     }
@@ -44,6 +45,7 @@ struct AccountSummaryScreen: View {
       self.accountSummaryVM.getAllAccounts()
       
     }) {
+      
       if self.activeSheet == .transferFunds {
         TransferFundsScreen()
       } else if self.activeSheet == .addAccount {

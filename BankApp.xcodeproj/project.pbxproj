@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750840DE26443788004A90BD /* TransferFundsAccountSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750840DD26443788004A90BD /* TransferFundsAccountSelectionView.swift */; };
 		7537B522263DA2BF00760492 /* AccountSummaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7537B521263DA2BF00760492 /* AccountSummaryScreen.swift */; };
 		7537B525263DA5D900760492 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7537B524263DA5D900760492 /* AccountListView.swift */; };
 		7559A46D263F577E00BCD120 /* CreateAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7559A46C263F577E00BCD120 /* CreateAccountRequest.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		750840DD26443788004A90BD /* TransferFundsAccountSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundsAccountSelectionView.swift; sourceTree = "<group>"; };
 		7537B521263DA2BF00760492 /* AccountSummaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryScreen.swift; sourceTree = "<group>"; };
 		7537B524263DA5D900760492 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
 		7559A46C263F577E00BCD120 /* CreateAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequest.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				7537B524263DA5D900760492 /* AccountListView.swift */,
+				750840DD26443788004A90BD /* TransferFundsAccountSelectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				7559A46D263F577E00BCD120 /* CreateAccountRequest.swift in Sources */,
 				75EBEF402640B41A0004FA4E /* TransferFundRequest.swift in Sources */,
 				7597ACBC264193D1003302D6 /* TransferFundsViewModel.swift in Sources */,
+				750840DE26443788004A90BD /* TransferFundsAccountSelectionView.swift in Sources */,
 				75B870932641B2FA0060E947 /* TransferFundsScreen.swift in Sources */,
 				75EBEF432640B5AB0004FA4E /* TransferFundResponse.swift in Sources */,
 			);
